@@ -13,6 +13,8 @@ function _chart(DOM,width,height,d3,$0,graticule,mesh,sphere,points,drag)
 {
   const context = DOM.context2d(width, height);
   const path = d3.geoPath($0.value, context).pointRadius(1.5);
+  const cursorUrl = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDY0IDY0Jz4KICA8cGF0aCBkPSdNMzIgNCAzOCAyNCA2MCAyOCAzOCAzMiAzMiA2MCAyNiAzMiA0IDI4IDI2IDI0WicgZmlsbD0nd2hpdGUnIHN0cm9rZT0nIzFlOTBmZicgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBzdHJva2UtbGluZWNhcD0ncm91bmQnLz4KPC9zdmc+";
+  context.canvas.style.cursor = `url("${cursorUrl}") 16 16, auto`;
 
   function render() {
     context.clearRect(0, 0, width, height);
