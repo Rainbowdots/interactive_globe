@@ -1,0 +1,14 @@
+{
+  "name": "@d3/world-airports-voronoi",
+  "main": "546b88f86e8150ca@344.js",
+  "version": "344.0.0",
+  "homepage": "https://observablehq.com/@d3/world-airports-voronoi",
+  "author": {
+    "name": "D3",
+    "url": "https://observablehq.com/@d3"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
